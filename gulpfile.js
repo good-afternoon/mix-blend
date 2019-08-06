@@ -16,7 +16,7 @@ const browserSync = require("browser-sync"); // 自動リロード
 * path
 */
 const SRC = "src/",
-      PUBLIC = 'public',
+      PUBLIC = 'docs',
       BASE_PATH = '/',
       DEST = PUBLIC + BASE_PATH;
 

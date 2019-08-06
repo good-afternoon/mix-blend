@@ -1,0 +1,18 @@
+.mouse{
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  user-select: none;
+  mix-blend-mode: difference;
+  background: #261F27;
+  //background: #1E2729;
+  z-index: 99;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  @include mq(sp) {
+    top: 50% !important;
+    left: 50% !important;
+    width: 60vw;
+    height: 60vw;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,20 @@
+//media queries
+@mixin mq($width) {
+  @if $width == pc {
+    $breakpoint: $breakpoint + 1px;
+    @media (min-width: $breakpoint) { @content; }
+  }
+  @if $width == ipad {
+    @media (min-width: $breakpoint) and (max-width: 1024px) { @content; }
+  }
+  @if $width == sp {
+    @media (max-width: $breakpoint) { @content; }
+  }
+  @if $width == design {
+    @media (max-width: $breakpoint_design) { @content; }
+  }
+
+  @if $width == inner_large {
+    @media (max-width: $breakpoint_inner_large) { @content; }
+  }
+}

@@ -13,6 +13,13 @@ const imagemin = require('gulp-imagemin');   // 画像ファイルの最適化
 const browserSync = require("browser-sync"); // 自動リロード
 
 /**
+* webpack
+*/
+const webpackStream = require('webpack-stream');
+const webpack = require('webpack');
+const webpackConfig = require('./webpack.config');
+
+/**
 * path
 */
 const SRC = "src/",
@@ -124,6 +131,11 @@ gulp.task('js', function() {
   );
 });
 
+//gulp webpackで実行
+gulp.task('webpack', function() {
+  return webpackStream(webpackConfig, webpack)
+  .pipe(gulp.dest(DEST + 'assets/js/'));
+});
 
 
 // BrowserSyncの設定
@@ -153,6 +165,8 @@ gulp.task('watch', function () {
   gulp.watch(SRC + 'lib/**/*', gulp.parallel('lib'));
   // jsディレクトリの更新を監視
   gulp.watch(SRC + 'js/*', gulp.parallel('js'));
+  // ES2019の更新を監視
+  gulp.watch(SRC + 'js-es2019/**/*.js', gulp.parallel('webpack'));
 });
 
 
@@ -164,6 +178,7 @@ gulp.task('default',
     'sass',
     'ejs',
     'js',
+    'webpack',
     'imagemin',
     'lib',
     'browser-sync',

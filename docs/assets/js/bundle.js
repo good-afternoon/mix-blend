@@ -86,8 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-<<<<<<< HEAD
-=======
 /***/ "./node_modules/jquery/dist/jquery.js":
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
@@ -110,22 +108,15 @@ eval("module.exports = function (module) {\n  if (!module.webpackPolyfill) {\n  
 
 /***/ }),
 
->>>>>>> develop
 /***/ "./src/js-es2019/app.js":
 /*!******************************!*\
   !*** ./src/js-es2019/app.js ***!
   \******************************/
 /*! no exports provided */
-<<<<<<< HEAD
-/***/ (function(module, exports) {
-
-eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError: ENOENT: no such file or directory, open '/Users/nodoka/Documents/website/mix-blend/src/js-es2019/app.js'\");\n\n//# sourceURL=webpack:///./src/js-es2019/app.js?");
-=======
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n // ドルマークに参照を代入(慣習的な $ を使うため)\n\nvar $ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;\n/**\n * マウスポインタの座標を取得\n */\n\n$(window).mousemove(function () {\n  var x = event.clientX,\n      y = event.clientY;\n  $('#js-mouse').css({\n    'top': y + 20,\n    'left': x + 20\n  });\n});\n\n//# sourceURL=webpack:///./src/js-es2019/app.js?");
->>>>>>> develop
 
 /***/ })
 

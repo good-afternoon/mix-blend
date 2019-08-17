@@ -19,8 +19,6 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "vue-loader": "^15.7.1",
-    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-stream": "^5.2.1"
@@ -29,7 +27,7 @@
     "browser-sync": "^2.26.7",
     "gulp-plumber": "^1.2.1",
     "jquery": "^3.4.1",
-    "vue": "^2.6.10"
+    "throttle-debounce": "^2.1.0"
   },
   "browserslist": [
     "last 2 versions",

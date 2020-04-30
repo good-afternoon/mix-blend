@@ -26,7 +26,7 @@
   "dependencies": {
     "browser-sync": "^2.26.7",
     "gulp-plumber": "^1.2.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "throttle-debounce": "^2.1.0"
   },
   "browserslist": [
